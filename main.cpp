@@ -18,12 +18,12 @@ void unit_test()
 	std::vector<std::string> enc;
 
 	for (std::string wd : w)
-		dec.push_back(encrypt(wd));
+		enc.push_back(encrypt(wd));
 
 	for (std::string wd : dec)
-		enc.push_back(decrypt(wd));
+		dec.push_back(decrypt(wd));
 
-	std::cout << "Words to Decript:\n";
+	std::cout << "Words to Encrypt:\n";
 
 	for (int i = 1; i <= w.size(); i++)
 	{
@@ -32,7 +32,7 @@ void unit_test()
 
 	std::cout << std::endl;
 	std::cout << std::endl;
-	std::cout << "After Decript:\n";
+	std::cout << "After Encrypt:\n";
 
 	for (int i = 1; i <= dec.size(); i++)
 	{
@@ -41,7 +41,7 @@ void unit_test()
 
 	std::cout << std::endl;
 	std::cout << std::endl;
-	std::cout << "After Encript:\n";
+	std::cout << "After Decrypt:\n";
 
 	for (int i = 1; i <= enc.size(); i++)
 	{
