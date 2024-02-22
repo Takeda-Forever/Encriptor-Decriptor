@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 
-std::string encript(std::string w);
-std::string decript(std::string w);
+std::string encrypt(std::string w);
+std::string decrypt(std::string w);
 
 void unit_test() 
 {
@@ -18,10 +18,10 @@ void unit_test()
 	std::vector<std::string> enc;
 
 	for (std::string wd : w)
-		dec.push_back(encript(wd));
+		dec.push_back(encrypt(wd));
 
 	for (std::string wd : dec)
-		enc.push_back(decript(wd));
+		enc.push_back(decrypt(wd));
 
 	std::cout << "Words to Decript:\n";
 
@@ -56,7 +56,7 @@ int main()
 }
 
 
-std::string encript(std::string w)
+std::string encrypt(std::string w)
 {
 	std::string result;
 
@@ -78,7 +78,7 @@ std::string encript(std::string w)
 	return result;
 }
 
-std::string decript(std::string w)
+std::string decrypt(std::string w)
 {
 	std::string result;
 
